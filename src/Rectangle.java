@@ -1,4 +1,4 @@
-public class Rectangle extends Shape{
+public class Rectangle extends Shape implements Drawable{
 
     private int sideA, sideB;
 
@@ -9,22 +9,6 @@ public class Rectangle extends Shape{
         super(color);
         this.sideA = 1;
         this.sideB = 1;
-    }
-
-    public int getSideA() {
-        return sideA;
-    }
-
-    public void setSideA(int sideA) {
-        this.sideA = sideA;
-    }
-
-    public int getSideB() {
-        return sideB;
-    }
-
-    public void setSideB(int sideB) {
-        this.sideB = sideB;
     }
 
     @Override
@@ -54,4 +38,8 @@ public class Rectangle extends Shape{
         return sideA == rectangle.sideA && sideB == rectangle.sideB;
     }
 
+    @Override
+    public void draw() {
+        System.out.println("A rectangle is drawn");
+    }
 }

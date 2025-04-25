@@ -2,11 +2,11 @@ public class TestShapes {
     public static void main(String[] args) {
 
 
-        Shape shape = new Shape("red");
-        System.out.println(shape);
-        System.out.println("Area: " + shape.area());
-        System.out.println("Perimeter: " + shape.perimeter());
-        System.out.println("------------------------------------------------------------------");
+//        Shape shape = new Shape("red");
+//        System.out.println(shape);
+//        System.out.println("Area: " + shape.area());
+//        System.out.println("Perimeter: " + shape.perimeter());
+//        System.out.println("------------------------------------------------------------------");
 
         Circle circle = new Circle("blue", 5);
         System.out.println(circle);
